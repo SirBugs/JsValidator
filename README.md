@@ -4,6 +4,7 @@ JsValidator is a tool created for validating the JS files after crawlling it fro
 # Idea
 When you get js files from waybackruls, some of the urls is bad and others are 404, so u want the valid files to run a tool like Secretfinder or smth !!
 This tool is filtering all of them and outting only the valid js files directly <3
+Automatically saving the results in a .txt file called "valid_js_files.txt"
 
 # Installation
 Just need to install go, run:
@@ -60,4 +61,5 @@ or download from https://go.dev/dl/
 
 # Credits
 This tool was written in Golang 1.19.4, Made with all love in Egypt! <3
+
 Twitter@SirBagoza , Github@SirBugs
