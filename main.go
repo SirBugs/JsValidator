@@ -9,6 +9,23 @@ import (
 	"time"
 )
 
+func logo() {
+	fmt.Println("    /$$$$$           /$$    /$$          /$$ /$$       /$$             /$$                        ")
+	fmt.Println("   |__  $$          | $$   | $$         | $$|__/      | $$            | $$                        ")
+	fmt.Println("      | $$  /$$$$$$$| $$   | $$ /$$$$$$ | $$ /$$  /$$$$$$$  /$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$ ")
+	fmt.Println("      | $$ /$$_____/|  $$ / $$/|____  $$| $$| $$ /$$__  $$ |____  $$|_  $$_/   /$$__  $$ /$$__  $$")
+	fmt.Println(" /$$  | $$|  $$$$$$  \\  $$ $$/  /$$$$$$$| $$| $$| $$  | $$  /$$$$$$$  | $$    | $$  \\ $$| $$  \\__/")
+	fmt.Println("| $$  | $$ \\____  $$  \\  $$$/  /$$__  $$| $$| $$| $$  | $$ /$$__  $$  | $$ /$$| $$  | $$| $$      ")
+	fmt.Println("|  $$$$$$/ /$$$$$$$/   \\  $/  |  $$$$$$$| $$| $$|  $$$$$$$|  $$$$$$$  |  $$$$/|  $$$$$$/| $$      ")
+	fmt.Println(" \\______/ |_______/     \\_/    \\_______/|__/|__/ \\_______/ \\_______/   \\___/   \\______/ |__/      ")
+	fmt.Println("")
+	fmt.Println("                             JsValidator Tool By @SirBugs .go Version")
+	fmt.Println("                                    V: 1.0.1 Made With All Love")
+	fmt.Println("                        For Validating Javascript files out of waybackurls ")
+	fmt.Println("                                Twitter@SirBagoza / GitHub@SirBugs")
+	fmt.Printf("                                     Run: go run main.go file\n")
+}
+
 func rzlt_file() { // This func is created for checking if the results file if exist or not
 
 	if _, err := os.Stat("valid_js_files.txt"); err != nil {
@@ -52,6 +69,8 @@ func request(_url_ string) {
 }
 
 func main() {
+	logo()
+
 	rzlt_file()
 
 	arg := os.Args[1]
